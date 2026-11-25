@@ -1,0 +1,30 @@
+{
+  "name": "vault-harness",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A small reference harness for AI agents that work on an Obsidian vault: scheduled jobs, skill jobs run through a local AI CLI, a grep-and-cite vault agent, an ask/approve loop and code tasks in git worktrees.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "bin": {
+    "harness": "bin/harness.mjs"
+  },
+  "scripts": {
+    "demo": "tsx src/demo.ts",
+    "start": "tsx src/cli.ts daemon",
+    "harness": "tsx src/cli.ts",
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "2.1.7",
+    "hono": "4.13.18",
+    "tsx": "4.23.15"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "typescript": "5.9.3"
+  }
+}

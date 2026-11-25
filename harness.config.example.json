@@ -1,0 +1,14 @@
+{
+  "vault": "~/Documents/My Vault",
+  "stateDir": ".harness",
+  "outputDir": "_agent",
+  "port": 7788,
+  "defaultProvider": "claude",
+  "providers": {
+    "claude": { "command": "claude" },
+    "codex": { "command": "codex" }
+  },
+  "repos": {
+    "my-site": { "path": "../my-site", "test": ["npm", "test"] }
+  }
+}

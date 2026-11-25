@@ -1,0 +1,50 @@
+[
+  {
+    "id": "morning-briefing",
+    "title": "Morning briefing",
+    "type": "skill",
+    "skill": "morning-briefing",
+    "schedule": "30 7 * * 1-5",
+    "catchUp": true,
+    "timeoutSec": 600
+  },
+  {
+    "id": "sort-todos",
+    "title": "Sort the to-do list",
+    "type": "native",
+    "handler": "sort-todos",
+    "schedule": "0 7 * * *",
+    "catchUp": true
+  },
+  {
+    "id": "file-inbox",
+    "title": "File inbox notes",
+    "type": "skill",
+    "skill": "file-inbox",
+    "schedule": "0 21 * * *",
+    "timeoutSec": 600
+  },
+  {
+    "id": "weekly-changelog",
+    "title": "Weekly changelog",
+    "type": "skill",
+    "skill": "weekly-changelog",
+    "schedule": "0 16 * * 5",
+    "catchUp": true,
+    "timeoutSec": 900
+  },
+  {
+    "id": "ask-vault",
+    "title": "Ask the vault",
+    "type": "skill",
+    "skill": "ask-vault",
+    "timeoutSec": 300
+  },
+  {
+    "id": "code-task",
+    "title": "Code task (worktree)",
+    "type": "skill",
+    "skill": "code-task",
+    "timeoutSec": 3600
+  }
+]

@@ -1,0 +1,15 @@
+node_modules/
+.harness/
+harness.config.json
+.harness-worktrees/
+.DS_Store
+
+# Local AI-tool and secret files: never publish
+.claude/settings.local.json
+.claude/*.local.*
+CLAUDE.local.md
+.mcp.json
+.env
+.env.*
+*.pem
+*.key

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vault Harness</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Vault Harness</h1>
+      <span id="vault" class="muted"></span>
+    </header>
+
+    <main>
+      <section id="asks-section">
+        <h2>Needs you <span id="ask-count" class="count"></span></h2>
+        <div id="asks"><p class="muted">Nothing waiting.</p></div>
+      </section>
+
+      <section>
+        <h2>Jobs</h2>
+        <table id="jobs">
+          <thead>
+            <tr><th>Job</th><th>Type</th><th>Schedule</th><th>Next run</th><th>Last run</th><th></th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <div class="two">
+        <section>
+          <h2>Ask the vault</h2>
+          <form id="ask-form">
+            <input id="question" placeholder="What did Globex say about pricing?" autocomplete="off" />
+            <button type="submit">Ask</button>
+          </form>
+          <div id="answer"></div>
+        </section>
+
+        <section>
+          <h2>Code task</h2>
+          <form id="code-form">
+            <select id="repo"></select>
+            <input id="task" placeholder="Fix the typo in the README" autocomplete="off" />
+            <button type="submit">Start</button>
+          </form>
+          <p class="muted small">Runs in a new git worktree. You approve the merge.</p>
+        </section>
+      </div>
+
+      <section>
+        <h2>Recent runs</h2>
+        <ul id="runs"></ul>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
